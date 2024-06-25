@@ -1,0 +1,32 @@
+Installing Flutter SDK on Windows
+Step 1: Download the Flutter SDK
+Download the latest stable release of the Flutter SDK from the official Flutter website.
+Step 2: Create a Folder for Flutter
+Create a directory to install Flutter.
+You can create a directory at %USERPROFILE% (e.g., C:\Users\{username}\dev) or %LOCALAPPDATA% (e.g., C:\Users\{username}\AppData\Local).
+Step 3: Extract the Flutter SDK
+Extract the downloaded Flutter SDK file into the directory you created.
+The Flutter SDK should be in the C:\Users\{username}\dev\flutter directory.
+Step 4: Add Flutter to the PATH Environment Variable
+To run Flutter commands in PowerShell, add Flutter to the PATH environment variable.
+
+Press Windows + Pause (or Windows + Fn + B if your keyboard lacks a Pause key).
+The System > About dialog will display.
+Click Advanced System Settings.
+In the Advanced tab, click Environment Variables....
+In the User variables for (username) section, look for the Path entry.
+If the Path Entry Exists
+Double-click on the Path entry.
+The Edit Environment Variable dialog will display.
+Double-click in an empty row and type %USERPROFILE%\dev\flutter\bin.
+Click the %USERPROFILE%\dev\flutter\bin entry and click Move Up until it sits at the top of the list.
+Click OK three times.
+If the Path Entry Doesn't Exist
+Click New....
+The Edit Environment Variable dialog will display.
+In the Variable Name box, type Path.
+In the Variable Value box, type %USERPROFILE%\dev\flutter\bin.
+Click OK three times.
+Step 5: Enable the Changes
+Close and reopen any existing command prompts and PowerShell instances.
+You have now installed the Flutter SDK and configured the PATH environment variable. You can start using Flutter commands in PowerShell.
